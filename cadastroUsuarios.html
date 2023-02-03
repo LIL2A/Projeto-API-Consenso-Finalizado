@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/select.css" />
+
+    <!-- Componentes bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Encode+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <!--Tela de ínicio onde o usuário irá realizar o cadastro, e selecionar qual o é o tipo do usuário (prestador ou ciente)-->
+  <body>
+
+    <!-- Cabeçalho (NavBar)-->
+    <header>
+      <h1 id="logo">agendapp</h1>
+      <div class="links-menu">
+        <a href="loginPrincipal.html">Login</a>
+    </div>
+    </header>
+
+    <main>
+      <!-- Formulário de Cadastro -->
+      <form id ="form-cad" class="row" style="width: 40%;">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">
+          <span class="material-symbols-outlined">
+            person
+          </span>
+          </span>
+      <!--Formulário Nome-->
+          <input type="text" id="nome" class="form-control required" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1"> 
+      <!--Formulário Sobrenome-->
+          <input type="text" id="sobrenome" class="form-control required" placeholder="Sobrenome" aria-label="Username" aria-describedby="basic-addon1">
+      <!--Formulário Tipo de Usuário-->
+          <select class="form-select" id="tipo-usuario" aria-label="Default select example">
+            <option selected disabled value="0"><p>Usuário:</p></option>
+            <option id="cliente" value="1">Cliente</option>
+            <option id="prestador" value="2">Prestador</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">
+          <span class="material-symbols-outlined">
+            mail
+          </span>
+          </span>
+
+      <!--Formulário E-mail-->
+          <input type="email" id="email" class="form-control required" placeholder="E-Mail" aria-label="Username">
+          <p id="nome-invalido" class="valid-feedback"></p>
+        </div>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">
+          <span class="material-symbols-outlined">
+            lock
+          </span>
+          </span>
+
+      <!--Formulário Senha-->
+          <input type="password" id="senha" class="form-control required" placeholder="Senha" aria-label="Username">
+          <p id="nome-invalido" class="valid-feedback"></p>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">
+          <span class="material-symbols-outlined">
+              lock
+          </span>
+          </span>
+
+      <!--Formulário Confirmação de Senha -->
+          <input type="password" id="senha2" class="form-control required" placeholder="Confirmar Senha" aria-label="Username">
+          <p id="nome-invalido" class="valid-feedback"></p>
+        </div>
+
+      <!--Botão-->
+       
+      <button type="submit">Cadastrar-se</button>
+        
+      </form>
+    </main>
+
+    <!-- Rodapé-->
+    <footer class="fixarRodape">
+      <img
+        id="consenso"
+        src="./img/Consenso_Marca_7.png"
+        alt="consensoLogo"
+        width="200"
+        />
+    
+      <div>
+        <span>Projeto Consenso 2023</span>
+        Agendapp © Treina Recife
+      </div>
+    </footer>
+
+    <script src="/JS/cadastroUsuario.js"></script>
+  </body>
+</html>

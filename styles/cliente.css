@@ -1,0 +1,192 @@
+/* ---------- TAGS's ---------- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: #0057df;
+  /*cor do background*/
+  color: #ffffff;
+  /*cor da letra*/
+  display: flex;
+  height:83.5px;
+  justify-content: space-between;
+  padding: 20px 20% 20px 10%;
+  align-items: center;
+  /* centraliza verticalmente no header */
+  /* Vertical = pra baixo e pra cima*/
+  /* horizontal = pra um lado e pra o outro*/
+}
+
+main {
+  height: 80vmin;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #d9d9d9;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20% 20px 10%;
+  /* cima esquerda baixo direita: direção do padding, margens, bordas..*/
+  /* sentido horario */
+}
+
+footer p {
+  color: #00213e;
+  font-style: bold;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-weight: bold;
+}
+
+form button {
+  height: 40px;
+  padding: 0 10px 0 10px;
+  border: none;
+  border-radius: 10px;
+  background: #0057df;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dados button {
+  height: 40px;
+  padding: 0 10px 0 10px;
+  border: none;
+  border-radius: 10px;
+  background: #0057df;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ---------- ID's ---------- */
+#logo {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+
+#link-active {
+  color: #ffb800;
+  border-bottom: 5px solid #ffb800;
+}
+
+/* ---------- CLASS's  ---------- */
+.links-menu {
+  font-family: Encode Sans;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0em;
+  display: flex;
+  gap: 40px;
+  /*espaço entre as palavras do header*/
+}
+
+.links-menu a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 9.3vh;
+  border-bottom: 8px solid #00000000;
+}
+
+.links-menu a:hover {
+  color: #ffb800;
+  border-bottom: 8px solid #ffb800;
+}
+
+/* Copia da classe ".links-menu", porém sem o hover para mostrar que nao se pode entrar nos links -- header da pagina de cadastro*/
+.notalow {
+  font-family: Encode Sans;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0em;
+  display: flex;
+  gap: 40px;
+}
+
+.notalow a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 11vh;
+  border-bottom: 8px solid #00000000;
+}
+
+.container {
+  padding-top: 10%;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 30%;
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+}
+
+
+.select {
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  border: 0.5px solid #5a5a5a;
+}
+.textarea{
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  border: 0.5px solid #5a5a5a;
+}
+
+
+.dado {
+  margin-bottom: 40px;
+  background-color: #d9f8ff;
+  border-radius: 10px;
+  border: 0.5px solid #5a5a5a;
+  padding: 12px;
+  font-size: 18px;
+  width: 100%;
+  font-size: 22px;
+}
+
+.dado span {
+  color: #5a5a5a;
+  font-weight: bold;
+}
+
+.dado a span {
+  color: #5a5a5a;
+  font-weight: 300;
+}
+
+
+

@@ -1,0 +1,125 @@
+/* ---------- TAGS's ---------- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+header {
+  background: #0057df;
+  color: #ffffff;
+  display: flex;
+  height: 83.5px;
+  justify-content: space-between;
+  padding: 20px 20% 20px 10%;
+  align-items: center;
+}
+
+main {
+  height: 70vmin;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #d9d9d9;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20% 20px 10%;
+}
+
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-weight: bold;
+}
+
+main button {
+  height: 40px;
+  padding: 0 10px 0 10px;
+  border: none;
+  width: 400px;
+  border-radius: 10px;
+  background: #0057df;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#logo {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 3vw;
+  color: #ffffff;
+}
+
+header nav {
+  font-family: Encode Sans;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0em;
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  display: flex;
+  align-items: center;
+  color: #d9d9d9;
+  text-decoration: none;
+  height: 11vh;
+  border-bottom: 8px solid #00000000;
+}
+
+.notalow {
+  font-family: Encode Sans;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0em;
+  display: flex;
+  gap: 40px;
+}
+
+.notalow a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 11vh;
+  border-bottom: 8px solid #00000000;
+}
+
+.links-menu {
+  font-family: Encode Sans;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0em;
+  display: flex;
+  gap: 40px;
+  /*espaço entre as palavras do header*/
+}
+
+.links-menu a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 9.3vh;
+  border-bottom: 8px solid #00000000;
+}
+
+.links-menu a:hover {
+  color: #ffb800;
+  border-bottom: 8px solid #ffb800;
+}

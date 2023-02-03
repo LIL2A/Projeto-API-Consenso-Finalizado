@@ -1,0 +1,140 @@
+/* -------------Corpo Principal------------ */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    /*Tudo que está contido no cabeçalho*/
+    background: #0057df;
+    /*cor do background*/
+    color: #ffffff;
+    /*cor da letra*/
+    display: flex;
+    height: 83.5px;
+    justify-content: space-between;
+    padding: 20px 20% 20px 10%;
+    align-items: center;
+    /* centraliza verticalmente no header */
+    /* Vertical = pra baixo e pra cima*/
+    /* horizontal = pra um lado e pra o outro*/
+}
+
+main {
+    /*tudo que está contido na área util do código*/
+    height: 80vmin;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    /*Localizado no final da página*/
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20% 20px 10%;
+    /* cima esquerda baixo direita: direção do padding, margens, bordas..*/
+    /* sentido horario */
+}
+
+footer p {
+    /*estilizações de componentes do footer*/
+    color: #00213e;
+    font-style: bold;
+}
+
+footer div {
+    /*estilizações de componentes do footer*/
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-weight: bold;
+}
+
+div button{ /*estilização do botão, que está dentro da div e por isso ela também está referenciada*/
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-radius: 10px;
+    background: #0057df;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* --------------------ID's------------------- */
+#logo {
+    /*nome agendapp > header*/
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+
+#link-active {
+    /*faz os botões mudarem de cor ao "clicar" > no header*/
+    color: #ffb800;
+    border-bottom: 5px solid #ffb800;
+}
+
+/*------------------Classes--------------------*/
+
+.links-menu {
+    font-family: Encode Sans;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    display: flex;
+    gap: 40px;
+    /*espaço entre as palavras do header*/
+}
+
+.links-menu a {
+    display: flex;
+    align-items: center;
+    color: #d9d9d9;
+    text-decoration: none;
+    height: 8.7vh;
+    border-bottom: 8px solid #00000000;
+}
+
+.links-menu a:hover {
+    color: #ffb800;
+    border-bottom: 8px solid #ffb800;
+}
+
+.prestador { /*estilização da classe main do home prestador, responsável pela opções de meus serviços*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dado {
+    margin-bottom: 40px;
+    background-color: #d9f8ff;
+    border-radius: 10px;
+    border: 0.5px solid #5a5a5a;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    font-size: 22px;
+}
+
+.dado span {
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+
+.dado a span {
+    color: #5a5a5a;
+    font-weight: 300;
+}
+

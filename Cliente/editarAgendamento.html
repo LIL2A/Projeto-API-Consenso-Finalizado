@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Agendamento</title>
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Consenso</title>
+
+    <link rel="stylesheet" href="../styles/cliente.css" />
+
+    <!-- Componentes bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Encode+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Página para edição dos agendamentos realizados pelo Cliente-->
+    <!-- Cabeçalho (NavBar)-->
+    <header>
+      <h1 id="logo">agendapp</h1>
+      <div class="links-menu">
+        <a href="./home.html" id="link-active">Agendar Serviço</a>
+        <a href="./agendamentosCliente.html">Meus Agendamentos</a>
+        <a href="/loginPrincipal.html">Sair</a>
+      </div>
+    </header>
+
+    <!-- "Formulário" para alteração do serviço escolhido-->
+    <main>
+      <div class="form">
+        <form action="agendamentosCliente.html" class="col form">
+          <div>
+            <div class="col">
+              Selecione o serviço:
+              <select name="" id="dataSelect" class="select">
+                <option value="" disabled selected>Selecione um serviço</option>
+              </select>
+            </div>
+            <br />
+            <div class="row">
+              <!-- Essa div está englobando a data e hora, para que fiquem lado a lado -->
+              <div class="col">
+                Data:
+                <input type="date" name="" class="select" id="dia">
+              </div>
+              <div class="col">
+                Hora:
+                <input type="time" name="" class="select" id="hora">
+              </div>
+            </div>
+          </div>
+          <button>Salvar</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Rodapé-->
+    <footer class="fixarRodape">
+      <img id="consenso" src="../img/Consenso_Marca_7.png" alt="consensoLogo" width="200" />
+      <div>
+          <span>Projeto Consenso 2023</span>
+          Agendapp © Treina Recife
+      </div>
+  </footer>
+
+  <script src="/JS/clienteServico.js"></script>
+
+  </body>
+</html>
